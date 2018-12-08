@@ -1,0 +1,22 @@
+<div>
+    <h2>I am in {{route}}</h2>
+    <br/>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User id</th>
+                <th>Title</th>
+                <th>Completed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="temp in sampleData">
+                <td>{{temp.id}}</td>
+                <td>{{temp.userId}}</td>
+                <td>{{temp.title}}</td>
+                <td>{{temp.completed}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
