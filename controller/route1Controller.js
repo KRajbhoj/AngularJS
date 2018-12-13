@@ -1,10 +1,8 @@
 // var app = angular.module('Flexinics', ['ngRoute'])
 
-app.controller('route1Controller', ['$scope', function ($scope, httpService) {
+app.controller('route1Controller', ['$scope', 'httpService', function ($scope, httpService) {
   $scope.route = 'route1'
   $scope.sampleData = []
-
-  $scope.getSampleData()
 
   $scope.getSampleData = function () {
     httpService.getData()
@@ -15,4 +13,6 @@ app.controller('route1Controller', ['$scope', function ($scope, httpService) {
         console.log(err)
       })
   }
+
+  $scope.getSampleData()
 }])
